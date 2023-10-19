@@ -1,0 +1,15 @@
+<h1>Lista de Atividades</h1>
+<table>
+    <thead>
+        <th>Cod</th>
+        <th>Atividade</th>
+    </thead>
+    {{#each dados}}
+    <tbody>
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.nome}}</td>
+        </tr>
+    </tbody>
+    {{/each}}
+</table>

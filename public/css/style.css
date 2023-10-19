@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #7AB6CD;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    margin: 5px;
+
+}
+
+header{
+    background-color: #0A2239;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav a, .logstat{
+    text-decoration: none;
+    color:  #DDE2C6;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    padding: 3px;
+    display: inline;
+    text-transform: capitalize;
+}
+header nav a:hover{
+    text-decoration: overline;
+    color: #1D84B5;
+    transition: 500ms;
+}
+
+input{
+    background-color: #DDE2C6;
+    color: #0A2239;
+    border: 2px solid #DDE2C6;
+    border-radius: 25px;
+    padding-left: 3px;
+}
+
+.btn{
+    border-radius: 35px;
+    padding: 5px;
+    background-color: #176087;
+    color: #FFF;
+    border: 2px solid #090C02;
+}
+
+.btn:hover{
+    background-color: #FFF;
+    color: #176087;
+    transition: 950ms;
+}
+
+table{
+    border: 2px solid #090C02;
+    border-collapse: collapse;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    font-weight: bold;
+    border: 1px solid #090C02;
+    background-color: #176087;
+    color: #DDE2C6;
+}
+
+td{
+    border: 1px solid #090C02;
+    background-color: #DDE2C6;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0A2239;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #DDE2C6;
+}

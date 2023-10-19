@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Atv01</title>
+</head>
+<body>
+    {{#if log}}
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/listar">Lista</a>
+            <a href="/cadastrar">Cadastro</a>
+            <a href="/apagar">Exclusão</a>
+            <a href="/atualizar">Atualização</a>
+        </nav>
+        <h2 class="logstat">Logado como: {{nomeLog}}</h2>
+    </header>
+    {{else}}
+        <header>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
+    {{/if}}
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        <p>Footer&copy;Pedro Andreola</p>
+    </footer>
+</body>
+</html>

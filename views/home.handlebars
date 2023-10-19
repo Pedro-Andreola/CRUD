@@ -1,0 +1,23 @@
+{{#if log}}
+<h1 class="title">Logout</h1>
+<form action="/logout" method="post">
+<br>
+    <button type="submit" class="btn">Fazer Logout</button>
+</form>
+{{else}}
+<h1 class="title">Login</h1>
+<form action="/login" method="post">
+    <label for="email">Digite seu E-mail</label>
+    <br>
+    <input type="email" name="email" placeholder="E-mail">
+    <br>
+    <label for="senha">Digite sua Senha</label>
+    <br>
+    <input type="password" name="senha" placeholder="Senha">
+    <br><br>
+    <button type="submit" class="btn">Fazer Login</button>
+</form>
+{{#if logErr}}
+<h2>Usuário e/ou senha inválido</h2>
+{{/if}}
+{{/if}}
